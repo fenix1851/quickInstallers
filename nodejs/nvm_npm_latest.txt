@@ -1,0 +1,18 @@
+# Install NVM (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+# Reload the terminal configuration
+source ~/.bashrc
+
+# Install the latest version of Node.js
+nvm install node
+
+# Set the latest version of Node.js as the default
+nvm alias default node
+
+# Verify the installation
+node --version
+npm --version
+
+# Restart the terminal for the changes to take effect
+exec bash

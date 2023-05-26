@@ -1,0 +1,7 @@
+# Install PostgreSQL
+sudo apt-get update
+sudo apt-get install -y postgresql
+
+# Start and enable PostgreSQL service
+sudo systemctl start postgresql
+sudo systemctl enable postgresql

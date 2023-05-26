@@ -1,0 +1,10 @@
+# Install MySQL Server
+sudo apt-get update
+sudo apt-get install -y mysql-server
+
+# Secure the MySQL installation (optional)
+sudo mysql_secure_installation
+
+# Start and enable MySQL service
+sudo systemctl start mysql
+sudo systemctl enable mysql
