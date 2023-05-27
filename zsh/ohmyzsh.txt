@@ -1,0 +1,14 @@
+# WARNING: This script will overwrite your current zsh configuration.
+sudo apt update
+sudo apt install zsh -y
+
+rm -rf ~/.oh-my-zsh
+
+# Download and install Oh My Zsh
+yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install zsh as default shell
+chsh -s $(which zsh)
+
+# Start zsh
+zsh
