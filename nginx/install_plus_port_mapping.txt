@@ -1,0 +1,14 @@
+# Установка Nginx
+sudo apt update
+sudo apt install nginx -y
+
+# Создание конфигурационного файла для перенаправления порта, измените 3000 на ваш порт
+echo 'server {
+    listen 80;
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+}' | sudo tee /etc/nginx/sites-available/default
+
+# Перезапуск Nginx для применения изменений
+sudo systemctl restart nginx 
