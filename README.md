@@ -33,3 +33,8 @@ This repository contains quick installer script files for various tools and serv
 ## Zsh
 
 * `ohmyzsh` - Quick installer for Oh My Zsh. This script updates system packages, installs Zsh, downloads and installs Oh My Zsh, sets Zsh as the default shell, and starts Zsh. [View File](./zsh/ohmyzsh.txt)
+
+
+## Alacritty
+
+* `install_plus_drakula` - Quick installer for Alacritty with Dracula theme. This script installs Alacritty and sets up the Dracula color scheme in the configuration file. [View File](./apps/terminals/alacritty/install_plus_drakula.txt)
